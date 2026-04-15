@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart City Dashboard</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Chart -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark px-3">
+  <h3 class="text-white">Smart City Dashboard</h3>
+</nav>
+
+<div class="container mt-4">
+
+  <!-- CARDS -->
+  <div class="row text-center">
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow">
+        <h5>Mumbai AQI</h5>
+        <h2 id="mumbai-aqi">--</h2>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow">
+        <h5>Oslo AQI</h5>
+        <h2 id="oslo-aqi">--</h2>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow">
+        <h5>Mumbai Score</h5>
+        <h2>40</h2>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow">
+        <h5>Oslo Score</h5>
+        <h2>90</h2>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CHART -->
+  <div class="mt-5">
+    <h4 class="text-center">City Comparison</h4>
+    <canvas id="chart"></canvas>
+  </div>
+
+  <!-- ANALYSIS -->
+  <div class="row mt-5">
+
+    <div class="col-md-6">
+      <h4>Mumbai Analysis</h4>
+      <ul>
+        <li>Overcrowded Transport</li>
+        <li>Traffic Congestion</li>
+        <li>Poor AQI</li>
+      </ul>
+    </div>
+
+    <div class="col-md-6">
+      <h4>Oslo Analysis</h4>
+      <ul>
+        <li>Efficient Transport</li>
+        <li>Low Congestion</li>
+        <li>Excellent AQI</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- IMPROVEMENTS -->
+  <div class="mt-5">
+    <h4>Proposed Improvements (Mumbai)</h4>
+    <ul>
+      <li>Increase Bus Fleet</li>
+      <li>Upgrade Rail System</li>
+      <li>AI-based Planning</li>
+    </ul>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
